@@ -11,16 +11,14 @@ import java.util.List;
 
 public class AdminServiceImpl implements AdminService {
 
-    private Person person;
 
-    private Integer index = 0;
 
     @Override
     public ApiResponse createTable(Table table) {
 
-        table.setId(++this.index);
-        if (!tables.contains(table)){
-            tables.add(table);
+        table.setId(TABLE_LIST.size());
+        if (!TABLE_LIST.contains(table)){
+            TABLE_LIST.add(table);
         }
 
         return new ApiResponse(200, "OK", table);
@@ -29,7 +27,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public ApiResponse getTable(Integer tableId) {
 
-        for (Table table : tables) {
+        for (Table table : TABLE_LIST) {
             if (table.getId().equals(tableId)){
                 return new ApiResponse(200, "OK", table);
             }
@@ -44,7 +42,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public ApiResponse showTables(List<Table> tables) {
+    public ApiResponse showTables(List<Table> TABLE_LIST) {
         return null;
     }
 
@@ -55,6 +53,11 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ApiResponse createWaiter(Waiter waiter) {
+
+        for (Waiter waiter1 : WAITER_LIST) {
+
+        }
+
         return null;
     }
 

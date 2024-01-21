@@ -10,9 +10,9 @@ import java.util.List;
 
 public interface AdminService {
 
-    List<Table> tables = new ArrayList<Table>();
-    List<Waiter> waiter = new ArrayList<Waiter>();
-    List<Foods> foods = new ArrayList<Foods>();
+    List<Table> TABLE_LIST = new ArrayList<Table>();
+    List<Waiter> WAITER_LIST = new ArrayList<Waiter>();
+    List<Foods> FOODS_LIST = new ArrayList<Foods>();
 
 
     ApiResponse createTable(Table table);
