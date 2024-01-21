@@ -13,12 +13,10 @@ public class AdminServiceImpl implements AdminService {
 
     private Person person;
 
-    private Integer index = 0;
-
     @Override
     public ApiResponse createTable(Table table) {
 
-        table.setId(++this.index);
+        table.setId(tables.size());
         if (!tables.contains(table)){
             tables.add(table);
         }
@@ -40,7 +38,12 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ApiResponse updateTable(Table newTable, Integer tableId) {
-        return null;
+
+        if (tableId != null) {
+            newTable.setId(tableId);
+            return new ApiResponse(200, "OK", newTable);
+        }
+        return new ApiResponse(400, "Bad Request", newTable);
     }
 
     @Override
