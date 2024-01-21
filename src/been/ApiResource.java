@@ -1,24 +1,24 @@
 package been;
 
 public class ApiResource extends BaseIdBeen{
-    private int code;
+    private Integer code;
     private String message;
     private Object data;
 
     public ApiResource() {
     }
 
-    public ApiResource(int code, String message, Object data) {
+    public ApiResource(Integer code, String message, Object data) {
         this.code = code;
         this.message = message;
         this.data = data;
     }
 
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
@@ -36,14 +36,5 @@ public class ApiResource extends BaseIdBeen{
 
     public void setData(Object data) {
         this.data = data;
-    }
-
-    @Override
-    public String toString() {
-        return "ApiResource{" +
-                "code=" + code +
-                ", message='" + message + '\'' +
-                ", data=" + data +
-                '}';
     }
 }

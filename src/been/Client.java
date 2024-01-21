@@ -3,11 +3,10 @@ package been;
 public class Client extends BaseIdBeen{
 
 
-    private int clientId;
     private String clientName;
     private String clientPassword;
-    private int userId;
-    private int tableId;
+    private Integer userId;
+    private Integer tableId;
     private double balance;
 
     public Client() {
@@ -17,14 +16,6 @@ public class Client extends BaseIdBeen{
         this.clientName = clientName;
         this.clientPassword = clientPassword;
         this.balance = balance;
-    }
-
-    public int getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(int clientId) {
-        this.clientId = clientId;
     }
 
     public String getClientName() {
@@ -43,19 +34,19 @@ public class Client extends BaseIdBeen{
         this.clientPassword = clientPassword;
     }
 
-    public int getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
-    public int getTableId() {
+    public Integer getTableId() {
         return tableId;
     }
 
-    public void setTableId(int tableId) {
+    public void setTableId(Integer tableId) {
         this.tableId = tableId;
     }
 
@@ -65,17 +56,5 @@ public class Client extends BaseIdBeen{
 
     public void setBalance(double balance) {
         this.balance = balance;
-    }
-
-    @Override
-    public String toString() {
-        return "Client{" +
-                "clientId=" + clientId +
-                ", clientName='" + clientName + '\'' +
-                ", clientPassword='" + clientPassword + '\'' +
-                ", userId=" + userId +
-                ", tableId=" + tableId +
-                ", balance=" + balance +
-                '}';
     }
 }

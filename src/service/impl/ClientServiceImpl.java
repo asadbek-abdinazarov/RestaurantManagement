@@ -7,13 +7,14 @@ import service.ClientService;
 import java.util.List;
 
 public class ClientServiceImpl implements ClientService {
+
     @Override
-    public String bookTable(int tableId, int clientId) {
+    public String bookTable(Integer tableId, Integer clientId) {
         return null;
     }
 
     @Override
-    public String bookFoods(int tableId, int clientId) {
+    public String bookFoods(Integer tableId, Integer clientId) {
         return null;
     }
 

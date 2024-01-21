@@ -9,19 +9,19 @@ import java.util.List;
 
 public class AdminServiceImpl implements AdminService {
 
-    //TODO: TABLE ----------------------------------------------------------------
+
     @Override
     public String createTable(Table table) {
         return null;
     }
 
     @Override
-    public String getTable(int tableId) {
+    public String getTable(Integer tableId) {
         return null;
     }
 
     @Override
-    public String updateTable(Table newTable, int tableId) {
+    public String updateTable(Table newTable, Integer tableId) {
         return null;
     }
 
@@ -31,24 +31,22 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public String deleteTable(int tableId) {
+    public String deleteTable(Integer tableId) {
         return null;
     }
 
-
-    //TODO: USER ----------------------------------------------------------------
     @Override
     public String createUser(User user) {
         return null;
     }
 
     @Override
-    public String getUser(int userId) {
+    public String getUser(Integer userId) {
         return null;
     }
 
     @Override
-    public String updateUser(User newUser, int userId) {
+    public String updateUser(User newUser, Integer userId) {
         return null;
     }
 
@@ -58,11 +56,9 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public String deleteUser(int userId) {
+    public String deleteUser(Integer userId) {
         return null;
     }
-
-    //TODO: FOOD ----------------------------------------------------------------
 
     @Override
     public String createFood(Foods food) {
@@ -70,12 +66,12 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public String getFood(int foodId) {
+    public String getFood(Integer foodId) {
         return null;
     }
 
     @Override
-    public String updateFood(Foods newFood, int foodId) {
+    public String updateFood(Foods newFood, Integer foodId) {
         return null;
     }
 
@@ -85,7 +81,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public String deleteFood(int foodId) {
+    public String deleteFood(Integer foodId) {
         return null;
     }
 }

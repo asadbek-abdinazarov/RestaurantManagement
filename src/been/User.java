@@ -1,16 +1,12 @@
 package been;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class User extends BaseIdBeen{
 
 
 
-    private int userId;
     private String username;
     private String password;
-    private int clientId;
+    private Integer clientId;
     private double salary;
 
     public User() {
@@ -20,14 +16,6 @@ public class User extends BaseIdBeen{
         this.username = username;
         this.password = password;
         this.salary = salary;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 
     public String getUsername() {
@@ -46,11 +34,11 @@ public class User extends BaseIdBeen{
         this.password = password;
     }
 
-    public int getClientId() {
+    public Integer getClientId() {
         return clientId;
     }
 
-    public void setClientId(int clientId) {
+    public void setClientId(Integer clientId) {
         this.clientId = clientId;
     }
 
@@ -60,16 +48,5 @@ public class User extends BaseIdBeen{
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", clientId=" + clientId +
-                ", salary=" + salary +
-                '}';
     }
 }

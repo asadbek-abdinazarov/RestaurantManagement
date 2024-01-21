@@ -1,15 +1,11 @@
 package been;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Table extends BaseIdBeen{
 
-
-
-    private int tableId;
-    private int numberOfChairs;
-    private int clientId;
+    private Integer numberOfChairs;
+    private Integer clientId;
     List<Foods> foods;
 
     public Table() {
@@ -21,27 +17,19 @@ public class Table extends BaseIdBeen{
         this.foods = foods;
     }
 
-    public int getTableId() {
-        return tableId;
-    }
-
-    public void setTableId(int tableId) {
-        this.tableId = tableId;
-    }
-
-    public int getNumberOfChairs() {
+    public Integer getNumberOfChairs() {
         return numberOfChairs;
     }
 
-    public void setNumberOfChairs(int numberOfChairs) {
+    public void setNumberOfChairs(Integer numberOfChairs) {
         this.numberOfChairs = numberOfChairs;
     }
 
-    public int getClientId() {
+    public Integer getClientId() {
         return clientId;
     }
 
-    public void setClientId(int clientId) {
+    public void setClientId(Integer clientId) {
         this.clientId = clientId;
     }
 
@@ -51,15 +39,5 @@ public class Table extends BaseIdBeen{
 
     public void setFoods(List<Foods> foods) {
         this.foods = foods;
-    }
-
-    @Override
-    public String toString() {
-        return "Table{" +
-                "tableId=" + tableId +
-                ", numberOfChairs=" + numberOfChairs +
-                ", clientId=" + clientId +
-                ", foods=" + foods +
-                '}';
     }
 }
